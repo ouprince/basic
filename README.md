@@ -12,7 +12,7 @@
 * 最彻底的方法就是删除安装的egg 文件包
 
 ## 使用
-    ```
+```
     from basic.tools import WordsMatch
     datas = [(实体,类型) ... ]
     wm = WordsMatch(datas) | wm = WordsMatch(); wm.wbook = datas
@@ -25,5 +25,4 @@
     datas = []
     with DataBaseOperation(config) as db:
         for data in db.download('实体表(name,shortname,type)'):
-            datas.extend(data.loadData)
-    ```
+```
