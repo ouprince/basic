@@ -25,4 +25,5 @@
     datas = []
     with DataBaseOperation(config) as db:
         for data in db.download('实体表(name,shortname,type)'):
+            datas.extend(data.loadData)
 ```

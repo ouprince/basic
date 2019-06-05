@@ -147,7 +147,7 @@ class WordsMatch(object,metaclass = type):
 ''' 实体类 '''
 class NER(object):
     def __repr__(self):
-        return "NER(name = '%s', shortname = '%s', type = '%s')" %(self.name,self.shortname,self.type)
+        return "NER(name = '%s', shortname = %s, type = '%s')" %(self.name,self.shortname,self.type)
          
     @property
     def loadData(self):
@@ -189,11 +189,11 @@ class DataBaseOperation(object):
         
 if __name__ == "__main__":
     config = {
-    "host":"10.128.3.131",
-    "port":5432,
-    "user":"gfrobot",
-    "password":"gfrobot",
-    "database":"gfrobot"
+    "host":"host",
+    "port":port,
+    "user":"user",
+    "password":"password",
+    "database":"database"
     }
     
     datas = []
